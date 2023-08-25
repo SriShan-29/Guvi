@@ -45,4 +45,4 @@ if(!empty($_POST['data_type']))
 
 	echo json_encode($info);
 }
-
+?>
