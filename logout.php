@@ -6,3 +6,4 @@ session_destroy();
 unset($_SESSION['PROFILE']);
 
 redirect("login.php");
+?>
