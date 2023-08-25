@@ -5,7 +5,7 @@ session_start();
 function db_query(string $query, array $data = array())
 {
 	$string = "mysql:hostname=localhost;dbname=profile_db";
-	$con = new PDO($string, 'root', '');
+	$con = new PDO($string, 'root', 'vishnu');
 
 	$stm = $con->prepare($query);
 	$check = $stm->execute($data);
@@ -66,3 +66,4 @@ function user(string $key = '')
 
 	return false;
 }
+?>
